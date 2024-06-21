@@ -35,14 +35,15 @@ repos:
         rev: v3.0.0
         hooks:
           - id: pylint
-#            exclude: ^docs|tests
+            exclude: ^docs|tests
             language_version: python3.12
 
     - repo: local
       hooks:
         - id: pytest
-          always_run: true
-          entry: python3 -m pytest
-          language: system
           name: pytest
+          always_run: true
+          entry: ./.venv/bin/pytest tests
+          language: system
           pass_filenames: false
+          types: [python]
