@@ -13,7 +13,7 @@
 
 1. **Clone the repository**:
 ```bash
-git clone https://github.com/yourusername/fsm.git
+git clone https://github.com/Ivan-Grigorev/FSManager.git
 cd fsm
 ```
 
